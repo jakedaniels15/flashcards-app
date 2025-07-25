@@ -1,4 +1,23 @@
-# Getting Started with Create React App
+# Flashcards App
+
+A React-based flashcards application built with Redux Toolkit for state management. This project helps you create topics, quizzes, and flashcards for studying.
+
+## Features
+
+- **Topics**: Organize your flashcards by subject with custom icons
+- **Quizzes**: Create quizzes within topics containing multiple cards
+- **Flashcards**: Interactive cards with front and back content
+- **Redux State Management**: Centralized state management with Redux Toolkit
+- **React Router**: Navigation between different views
+
+## Technology Stack
+
+- React 18
+- Redux Toolkit
+- React Router DOM
+- Create React App
+
+## Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
