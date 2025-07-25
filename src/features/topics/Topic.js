@@ -3,17 +3,18 @@ import { useSelector } from "react-redux";
 import { Link, useParams, Navigate } from "react-router-dom";
 import ROUTES from "../../app/routes";
 import { selectAllTopics } from "./topicsSlice";
+import { selectAllQuizzes } from "../quizzes/quizzesSlice";
 
 export default function Topic() {
   const topics = useSelector(selectAllTopics);
-  const quizzes = {}; // replace with selector when quizzes slice is created
+  const quizzes = useSelector(selectAllQuizzes);
   const { topicId } = useParams();
   const topic = topics[topicId];
 
-  if(!topic) {
-    return <Navigate to={ROUTES.topicsRoute()} replace/>
+  if (!topic) {
+    return <Navigate to={ROUTES.topicsRoute()} replace />;
   }
-  
+
   const quizzesForTopic = topic.quizIds.map((quizId) => quizzes[quizId]);
 
   return (
