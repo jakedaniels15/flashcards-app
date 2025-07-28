@@ -209,11 +209,51 @@ li:not(:last-child) {
   padding: 0;
 }
 
-.card {
+.card-container {
   background: #b736ff;
   border-radius: 4px;
+  padding: 20px;
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.card {
+  background: transparent;
   border: none;
   color: white;
-  padding: 73px 44px;
   width: 100%;
+  text-align: left;
+}
+
+.card-content {
+  padding: 20px 0;
+  min-height: 100px;
+  font-size: 16px;
+  line-height: 1.5;
+  white-space: pre-wrap;
+}
+
+.card-actions {
+  text-align: center;
+  padding-top: 10px;
+  border-top: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.reveal-answer-button,
+.reset-card-button {
+  background: #ffffff;
+  border: 1px solid #ffffff;
+  border-radius: 20px;
+  color: #b736ff;
+  font-weight: bold;
+  font-size: 14px;
+  padding: 8px 20px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.reveal-answer-button:hover,
+.reset-card-button:hover {
+  background: rgba(255, 255, 255, 0.9);
+  transform: translateY(-1px);
 }
